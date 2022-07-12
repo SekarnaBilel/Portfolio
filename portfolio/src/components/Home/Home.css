@@ -1,0 +1,154 @@
+.intro{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+}
+
+.i-left{
+    display: flex;
+    position: relative;
+    flex:1;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hr1{
+    display: flex;
+    position: fixed;
+    width: 100px;
+    margin-left: -127px;
+    margin-top: 395px;
+    background-color: orange;
+    font-weight: bold ;
+    transform: rotate(-90deg);
+    
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.i-name>:nth-child(1){
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name>:nth-child(2){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.i-name>:nth-child(3){
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.i-button{
+    width: 6rem;
+    height: 2rem;
+}
+
+.i-icons{
+    display: inline-block;
+    position: fixed;
+    margin-top: 12rem;
+    margin-left: -6rem;
+    gap: 0rem;
+}
+
+.i-icons>*{
+    margin-top: -50px;
+    transform: scale(0.28);
+}
+
+.i-icons>*{
+    cursor: pointer;
+}
+
+
+.i-right{
+    flex: 1;
+    position: relative;
+}
+
+.hr{
+    display: flex;
+    position: relative;
+    width: 100px;
+    margin-left: -150px;
+    margin-top: -8px;
+    background-color: orange;
+    font-weight: bold ;
+}
+.i-right>*{
+    position: absolute;
+    z-index: 1;
+}
+
+.i-right>:nth-child(1){
+ transform: scale(0.69);
+ left: -25%;
+ top: -9%;
+}
+
+.i-right>:nth-child(2){
+    transform: scale(0.67);
+    left: -6rem;
+    top: -4.6rem;
+   }
+
+.i-right>:nth-child(3){
+    transform: scale(1);
+    left: 1%;
+    top: -4.6rem;
+   }
+
+
+.i-mail {
+    position: fixed;
+    text-decoration: none;
+    color:var(--orange);
+    margin-top: 10rem;
+    margin-left: 25rem;
+    transform: rotate(-90deg);
+}
+
+a[classname="gmail"] {
+    text-decoration: none;
+    color: orange;
+    font-size: 16px;
+}
+
+@media screen and (max-width:480px) {
+    .intro{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .i-right{
+        transform:scale(0.7);
+        left: -5rem;
+    }
+    .i-right>:nth-child(1){
+        transform: scale(0.8);
+        left: -5rem;
+    }
+
+    .i-icons{
+        display: none;
+    }
+
+    .hr1{
+        display: none;
+    }
+    .hr{
+        display: none;
+    }
+    
+}

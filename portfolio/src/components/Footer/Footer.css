@@ -1,0 +1,26 @@
+.footer{
+    display: flex;
+    align-items: center;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+    height: 10vh;   
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+    
+    .footer{
+        margin-top: 60px;
+
+    }
+
+    .hidden{
+        display: flex;
+        color: aliceblue;
+        z-index: 2;
+    }
+    
+}
